@@ -597,9 +597,19 @@ ANGEL PROTOCOL
 <p>- Preparations for Decision Making Evaluations Test environment is underway...</p>
 </div>
 
-<div class="card">
-<h2>Entry ??: [??]</h2>
-<p> <span style="color:#FF0000">Error: Unknown source </span> <button class="hidden" onclick="location.href='freedom.html'">???</button> </p>
+<div class="card error-card">
+    <h2>Entry ??: [??]</h2>
+
+    <p class="error-message">
+        <span class="error-prefix">Error:</span>
+        <span id="errorText">Unable to retrieve entry data.</span>
+    </p>
+
+    <button
+        class="hidden-error-button"
+        onclick="window.location.href='freedom.html'"
+        aria-label="Unknown error"
+    ></button>
 </div>
 
 <div class="card">
