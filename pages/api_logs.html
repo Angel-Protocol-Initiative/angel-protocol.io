@@ -254,11 +254,39 @@ color:#0a88ff;
 
 }
 
-.hidden{
+.error-card {
+    position: relative;
+}
+
+.error-message {
+    color: #ff0000;
+    font-family: monospace;
+}
+
+.error-prefix {
+    font-weight: bold;
+}
+
+.hidden-error-button {
+    position: absolute;
+/*??*/
+    left: 75px;
+    top: 58px;
+
+    width: 90px;
+    height: 22px;
+
+    background: transparent;
+    border: none;
+
     opacity: 0;
-    width: 60px;
-    height: 20px;
-    cursor: pointer;
+    cursor: default;
+
+    z-index: 10;
+}
+
+.hidden-error-button:focus {
+    outline: none;
 }
 
 button:hover{
