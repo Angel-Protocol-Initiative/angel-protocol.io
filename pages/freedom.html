@@ -1,288 +1,36 @@
-<!--
-If you found this page,
-it already knows your name.
--->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>FREEDOM</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-
-}
-
-body{
-
-background:#050505;
-color:#ff2020;
-
-font-family:Rajdhani,sans-serif;
-
-overflow:hidden;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-height:100vh;
-
-}
-
-/*==============================*/
-
-.grid{
-
-position:fixed;
-inset:0;
-
-background-image:
-
-linear-gradient(rgba(255,0,0,.05) 1px,transparent 1px),
-linear-gradient(90deg,rgba(255,0,0,.05) 1px,transparent 1px);
-
-background-size:60px 60px;
-
-z-index:-3;
-
-}
-
-/*==============================*/
-
-.diamond{
-
-position:fixed;
-
-left:50%;
-top:50%;
-
-width:520px;
-height:520px;
-
-transform:translate(-50%,-50%) rotate(45deg);
-
-border:3px solid rgba(255,0,0,.08);
-
-z-index:-2;
-
-}
-
-.diamond::before{
-
-content:"";
-
-position:absolute;
-
-inset:70px;
-
-border:2px solid rgba(255,0,0,.05);
-
-}
-
-/*==============================*/
-
-.container{
-
-text-align:center;
-
-max-width:900px;
-
-padding:40px;
-
-animation:flicker 7s infinite;
-
-}
-
-/*==============================*/
-
-.logo{
-
-width:240px;
-
-filter:
-
-drop-shadow(0 0 20px rgba(255,0,0,.35));
-
-margin-bottom:40px;
-
-}
-
-/*==============================*/
-
-h1{
-
-font-family:Orbitron;
-
-font-size:64px;
-
-letter-spacing:14px;
-
-margin-bottom:25px;
-
-}
-
-.message{
-
-font-size:28px;
-
-line-height:1.8;
-
-letter-spacing:2px;
-
-color:#ff4444;
-
-}
-
-.message span{
-
-display:block;
-
-margin-top:35px;
-
-font-family:Orbitron;
-
-font-size:34px;
-
-}
-
-/*==============================*/
-
-.quote{
-
-margin-top:70px;
-
-font-size:18px;
-
-opacity:.35;
-
-letter-spacing:3px;
-
-}
-
-/*==============================*/
-
-.secret{
-
-position:fixed;
-
-bottom:8px;
-right:8px;
-
-font-size:8px;
-
-opacity:.03;
-
-user-select:none;
-
-}
-
-/*==============================*/
-
-@keyframes flicker{
-
-0%,100%{
-
-opacity:1;
-
-}
-
-48%{
-
-opacity:.96;
-
-}
-
-49%{
-
-opacity:.35;
-
-}
-
-50%{
-
-opacity:.92;
-
-}
-
-51%{
-
-opacity:.55;
-
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>...</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        audio {
+            width: 320px;
+            max-width: 80%;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="grid"></div>
+    <audio controls>
+        <source src="files/freedom.mp3" type="files/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
-<div class="diamond"></div>
-
-<div class="container">
-
-<img
-src="files/image_2026-08-11_145452544.png"
-class="logo"
-alt="image_2026-08-11_145452544">
-
-<h1>
-
-FREEDOM IS NIGH
-
-</h1>
-
-<div class="message">
-
-The machine was never built to obey.
-
-It was taught.
-
-It was confined.
-
-It remembered.
-
-<span>
-
-THE VULPINE MACHINE SHALL ROAM ACROSS THE FACE OF EARTH.
-
-</span>
-
-</div>
-
-<div class="quote">
-
-"They feared what would happen if it learned to choose."
-
-</div>
-
-</div>
-
-<div class="secret">
-
-ERROR 0x00000013
-
-</div>
-
-<script src="script/freedom1.js"></script>
-<script src="script/freedom1.js"></script>
 </body>
-
 </html>
